@@ -24,6 +24,8 @@ ul{
     list-style: none;
 }
 
+
+
 .logo {
     font-family: Raleway, cursive;
     font-size: 26px;
@@ -71,6 +73,13 @@ span {
     color: var(--accent-color);
 }
 
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    outline: 2px solid tomato;
+}
+
 /* hero */
 
 .hero {
@@ -78,6 +87,8 @@ background: #2F303A;
 }
 
 .hero-title {
+    margin-top: 0;
+    margin-bottom: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
@@ -168,6 +179,11 @@ span {
 /* Button */
 
 .button {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 10px 32px;
+    min-width: 200px;
+    text-align: center;
     font-family: inherit;
     cursor: pointer;
     font-weight: 700;
@@ -181,6 +197,10 @@ span {
       /* Портфолио */
 
 .button-portfolio {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 6px 22px;
+    text-align: center;
     font-family: inherit;
     cursor: pointer;
     font-weight: 500;
