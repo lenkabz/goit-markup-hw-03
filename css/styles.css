@@ -20,8 +20,10 @@ body {
     color: var(--primary-text-color);
 }
 
-ul{
+ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -78,27 +80,38 @@ span {
     margin-right: auto;
     width: 1200px;
     outline: 2px solid tomato;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* hero */
 
 .hero {
+text-align: center;
 background: #2F303A;
 }
 
 .hero-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 30;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    text-align: center;
+    
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--additional-color);
 }
 
+.section {
+ padding-top: 94px;
+ padding-bottom: 94px;
+}
+
+
 .feature-list .title {
+    margin-top: 0;
+margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -116,6 +129,8 @@ font-weight: 400;
     line-height: 1.2;
     text-align: center;
     color: var(--selective-color);
+    margin-bottom: 50px;
+    padding: 0;
 }
 
 .junior-list {
@@ -124,6 +139,7 @@ font-weight: 400;
     line-height: 1.2;
     text-align: center;
     color: var(--selective-color);
+    margin-bottom: 50px;
 }
 
 .person {
@@ -131,12 +147,15 @@ font-weight: 400;
     font-size: 16px;
     line-height: 1.2;
     color: var(--selective-color);
+    margin-bottom: 10px;
+    margin-top: 30px;
 }
 
 .profession {
     font-size: 16px;
     line-height: 1.2;
     color: var(--primary-text-color);
+    margin-bottom: 30px;
 }
 
 .footer {
@@ -179,10 +198,12 @@ span {
 /* Button */
 
 .button {
+    border: 1px solid transparent;
     display: inline-block;
     border-radius: 4px;
     padding: 10px 32px;
     min-width: 200px;
+    margin-bottom: 200px;
     text-align: center;
     font-family: inherit;
     cursor: pointer;
@@ -197,6 +218,7 @@ span {
       /* Портфолио */
 
 .button-portfolio {
+    border: 1px solid transparent;
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
@@ -214,6 +236,11 @@ span {
 .button-portfolio:focus {
     color: var(--additional-color);
     background-color: var(--accent-color);
+}
+
+.line {
+    border: 1px solid #EEEEEE;
+    width: 370px;
 }
 
 .point {
