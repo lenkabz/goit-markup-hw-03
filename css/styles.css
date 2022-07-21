@@ -10,7 +10,6 @@
     --button-portfolio-bg-color: #F5F4FA;
     --primary-br-color: #ffffff;
     --secondary-bg-color: #E5E5E5;
-    
 }
 
 body {
@@ -26,7 +25,10 @@ ul {
     padding: 0;
 }
 
-
+.main-nav {
+    display: flex;
+    align-items: center;
+}
 
 .logo {
     font-family: Raleway, cursive;
@@ -34,6 +36,7 @@ ul {
     line-height: 1.2px;
     color: var(--title-text-color);
     text-decoration: none;
+
 }
 
 span {
@@ -45,12 +48,31 @@ span {
 
 /* site nav */
 
+.site-nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.site-nav .item {
+    margin-right: 50px;
+}
+
+.site-nav .item:last-child {
+   margin-right: 0;
+}
+
+
 .site-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--selective-color);
     text-decoration: none;
+    
 }
 
 .site-nav .link:hover,
@@ -62,12 +84,30 @@ span {
     color: var(--accent-color);
 }
 
+.auth-nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.auth-nav .item {
+    margin-right: 50px;
+}
+
+.auth-nav .item:last-child {
+    margin-right: 0;
+ }
+
 .auth-nav .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     color: var(--primary-text-color);
     text-decoration: none;
+    
 }
 
 .auth-nav .link:hover,
@@ -79,9 +119,10 @@ span {
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
+    padding-left: 94px;
+    padding-right: 94px;
+    
     outline: 2px solid tomato;
-    margin-top: 0;
-    margin-bottom: 0;
 }
 
 /* hero */
@@ -106,6 +147,15 @@ background: #2F303A;
 .section {
  padding-top: 94px;
  padding-bottom: 94px;
+}
+
+.feature-list {
+display: flex;
+}
+
+.feature-list .item {
+    width: 270px;
+    background-color: tomato;
 }
 
 
@@ -238,10 +288,31 @@ span {
     background-color: var(--accent-color);
 }
 
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    
+ 
+}
+
+
 .line {
     border: 1px solid #EEEEEE;
     width: 370px;
+    margin-right: 30px;
+    
 }
+
+.line:nth-child(3n) {
+    margin-right: 0;
+}
+
+
 
 .point {
     font-weight: 700;
